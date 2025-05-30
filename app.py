@@ -1,11 +1,9 @@
 import streamlit as st
 import pandas as pd
 import os
-
+st.set_page_config(page_title="MediaMerge", layout="wide")
 st.title("📊 Media Merge App")
 st.write("✅ App loaded — please upload your media files below.")
-st.set_page_config(page_title="MediaMerge", layout="wide")
-st.title("📊 MediaMerge: Harmonize Media Performance Files")
 
 uploaded_files = st.file_uploader("Upload media Excel files", type=["xlsx"], accept_multiple_files=True)
 
